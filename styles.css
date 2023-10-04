@@ -1,19 +1,43 @@
 .table-view {
     display: none;
     margin-top: 20px;
+    background-color: #222; /* Dark grey background */
 }
 
 table {
     width: 100%;
     border-collapse: collapse;
+    background-color: #333; /* Slightly lighter dark for tables */
 }
 
 th, td {
-    border: 1px solid black;
+    border: 1px solid #555;  /* Darker border for contrast */
     padding: 8px;
     text-align: left;
+    color: #eee;  /* Light text color for dark background */
 }
+
 .big-text {
     font-size: 3em;
     display: block;
+}
+
+/* Add a general style for the body to make sure the overall background is also dark */
+body {
+    background-color: #181818; /* Very dark grey for the overall page */
+    color: #ddd;  /* Light grey text color for better contrast */
+    font-family: Arial, sans-serif;  /* Optional: Just to give a standard font for better appearance */
+}
+
+button {
+    background-color: #444;
+    color: #ddd;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
 }

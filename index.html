@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tablas desde JSON</title>
     <link rel="stylesheet" href="styles.css" />
-    <audio id="correctSound" src="correct-answer.mp3" preload="auto"></audio>
     <audio
       id="incorrectSound"
       src="incorrect-answer.mp3"
@@ -13,9 +12,9 @@
     ></audio>
   </head>
   <body>
-    <button onclick="showFirstTable()">Mostrar Primera Tabla</button>
-    <button onclick="showSecondTable()">Mostrar Segunda Tabla</button>
-    <button onclick="startCountdown()">Start</button>
+   <!--<button onclick="showFirstTable()">Mostrar Primera Tabla</button>
+    <button onclick="showSecondTable()">Mostrar Segunda Tabla</button>-->
+    <button onclick="startCountdown(); this.style.display='none';">Start</button>
 
     <div id="view1" class="table-view">
       <table id="table1">
@@ -35,6 +34,10 @@
     <div id="view2" class="table-view">
       <table id="counters">
         <tr>
+          <td style="background-color: blue">
+            <span class="big-text" id="levelCount">1</span>
+            <p>Nivel</p>
+          </td>
           <td style="background-color: green">
             <span class="big-text" id="correctCount">0</span>
             <p>Respuestas correctas</p>
