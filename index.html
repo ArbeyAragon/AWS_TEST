@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tablas desde JSON</title>
+    <link rel="stylesheet" href="styles.css" />
+    <audio id="correctSound" src="correct-answer.mp3" preload="auto"></audio>
+    <audio
+      id="incorrectSound"
+      src="incorrect-answer.mp3"
+      preload="auto"
+    ></audio>
+  </head>
+  <body>
+    <button onclick="showFirstTable()">Mostrar Primera Tabla</button>
+    <button onclick="showSecondTable()">Mostrar Segunda Tabla</button>
+    <button onclick="startCountdown()">Start</button>
+
+    <div id="view1" class="table-view">
+      <table id="table1">
+        <thead>
+          <tr id="countdownRow">
+            <td colspan="2" id="countdown">5</td>
+          </tr>
+          <tr>
+            <th>Columna 1</th>
+            <th>Columna 2</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+
+    <div id="view2" class="table-view">
+      <table id="counters">
+        <tr>
+          <td style="background-color: green">
+            <span class="big-text" id="correctCount">0</span>
+            <p>Respuestas correctas</p>
+          </td>
+          <td style="background-color: black; color: white">
+            <span class="big-text" id="netCount">0</span>
+            <p>Neto (Correctas - Incorrectas)</p>
+          </td>
+          <td style="background-color: red">
+            <span class="big-text" id="incorrectCount">0</span>
+            <p>Respuestas incorrectas</p>
+          </td>
+        </tr>
+      </table>
+
+      <table id="table2">
+        <thead>
+          <tr>
+            <th>Texto</th>
+            <th>Botón 1</th>
+            <th>Botón 2</th>
+            <th>Botón 3</th>
+            <th>Botón 4</th>
+            <th>Botón 5</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>

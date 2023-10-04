@@ -1,0 +1,49 @@
+text = '''
+1- Una empresa quiere que sus empleados tengan acceso a la infraestructura de escritorio virtual para acceder de forma segura a los escritorios proporcionados por la empresa a través de los dispositivos personales de los empleados ¿qué servicio de AWS debe utilizar la empresa para cumplir estos requisitos?
+A Amazon AppStream 2.0
+B AWS APPSYNc
+C Servidor de archivos de Amazon FSx para Windows
+-D Amazon WorkSpaces
+
+2- Que es una responsabilidad de AWS bajo el modelo de responsabilidad compartida de AWS
+A  Diseñar una aplicación de un cliente para la recuperación ante desastres
+B  Actualice los sistemas operativos invitados en las instancias Amazon EC2 implementadas
+C Configure nuevos recursos dentro de una cuenta AWS
+-D Asegure la infraestructura física
+
+3-  un desarrollador debe obtener acceso a los recursos de AWS desde la AWS CLI ¿qué características de AWS Identity and Access management IAM puede utilizar el desarrollador para la autenticación
+-A Claves de acceso IAM
+B Políticas de IAM
+C Claves SSH
+D Políticas de contraseña de cuenta
+
+
+4- Un sistema se recupera automáticamente de un error cuando una empresa lanza su carga de trabajo en la plataforma de servicios en la nube de AWS ¿qué pilar del marco de buena arquitectura de AWS demuestra esta situación?
+-A Fiabilidad
+B Optimización de costes
+C Eficiencia del rendimiento
+D Excelencia operativa
+
+5- Qué opción es una capacidad fundamental de aws Cloud adoption framework (AWS CAF) para la perspectiva de las operaciones?  
+-A Gestión del rendimiento y la capacidad
+B Gestión de la cartera de aplicaciones
+C Gestión de identidades y accesos
+D Gestión de productos
+
+
+6- Qué tareas requieren el uso del usuario raíz de la cuenta de AWS? SELECCIONE DOS
+-A Cambio de un plan de AWS support
+B Modificación de un tipo de instancia Amazon EC2
+C Agrupación de recursos en AWS Systems Manager
+D Ejecución de aplicaciones en Amazon Elastic Kubernetes Service (Amazon EKS)
+-E Cierre de una cuenta de AWS
+'''
+
+
+//archivo,csv
+"Pregunta", "Tipo de Respuesta", "Opción 1", "Opción 2", "Opción 3", "Opción 4", "Correcta 1", "Correcta 2", "Correcta 3", "Correcta 4"
+"¿Cuál es la capital de Francia?", "Respuesta única", "Madrid", "París", "Londres", "Roma", "false", "true", "false", "false"
+"¿Cuáles son colores primarios?", "Respuesta múltiple", "Rojo", "Verde", "Azul", "Amarillo", "true", "false", "true", "true"
+
+
+construye un script de python que pase las preguntas en un formato como el de text a un formato como el de archivo.csv, usa los mismos nombres de preguntas, pero adiciona la columna faltante
